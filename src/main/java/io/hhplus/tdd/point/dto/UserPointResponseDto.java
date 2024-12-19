@@ -16,8 +16,4 @@ public class UserPointResponseDto {
   private long point;
   private long updateMillis;
 
-
-
-
-
 }

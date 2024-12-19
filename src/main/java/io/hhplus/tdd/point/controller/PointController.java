@@ -68,14 +68,14 @@ public class PointController {
   /**
    * TODO - 특정 유저의 포인트를 충전하는 기능을 작성해주세요.
    */
-  @PatchMapping("{id}/charge")
+  @PutMapping("{id}/charge")
   public UserPointResponseDto charge(
       @PathVariable long id,
       @RequestBody long amount
   ) {
 
-    log.info("Patch 'point/{id}/charge' request ID: {}", id); // 요청 로그
-    log.info("Patch 'point/{id}/charge' request amount: {}", amount); // 요청 로그
+    log.info("PUT 'point/{id}/charge' request ID: {}", id); // 요청 로그
+    log.info("PUT 'point/{id}/charge' request amount: {}", amount); // 요청 로그
 
     UserPointRequestDto userPointRequestDto = UserPointRequestDto.builder().
         id(id)
@@ -92,14 +92,14 @@ public class PointController {
   /**
    * TODO - 특정 유저의 포인트를 사용하는 기능을 작성해주세요.
    */
-  @PatchMapping("{id}/use")
+  @PutMapping("{id}/use")
   public UserPointResponseDto use(
       @PathVariable long id,
       @RequestBody long amount
   ) {
 
-    log.info("Patch 'point/{id}/use' request ID: {}", id); // 요청 로그
-    log.info("Patch 'point/{id}/use' request amount: {}", amount); // 요청 로그
+    log.info("PUT 'point/{id}/use' request ID: {}", id); // 요청 로그
+    log.info("PUT 'point/{id}/use' request amount: {}", amount); // 요청 로그
 
     UserPointRequestDto userPointRequestDto = UserPointRequestDto.builder().
         id(id)
