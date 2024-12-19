@@ -1,6 +1,6 @@
 package io.hhplus.tdd.database;
 
-import io.hhplus.tdd.point.UserPoint;
+import io.hhplus.tdd.point.entity.UserPoint;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
  */
 @Component
 public class UserPointTable {
-
     private final Map<Long, UserPoint> table = new HashMap<>();
 
     public UserPoint selectById(Long id) {

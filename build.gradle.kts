@@ -23,6 +23,8 @@ dependencyManagement {
 
 dependencies {
     implementation(libs.spring.boot.starter.web)
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("org.apache.httpcomponents:httpclient:4.5.13")
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
     annotationProcessor(libs.spring.boot.configuration.processor)
