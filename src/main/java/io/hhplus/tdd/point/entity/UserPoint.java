@@ -1,4 +1,4 @@
-package io.hhplus.tdd.point.record;
+package io.hhplus.tdd.point.entity;
 
 
 public record UserPoint(

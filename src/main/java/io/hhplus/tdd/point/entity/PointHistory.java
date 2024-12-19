@@ -1,6 +1,4 @@
-package io.hhplus.tdd.point.record;
-
-import lombok.ToString;
+package io.hhplus.tdd.point.entity;
 
 public record PointHistory(
         long id,

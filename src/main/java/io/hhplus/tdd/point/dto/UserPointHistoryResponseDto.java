@@ -1,6 +1,6 @@
 package io.hhplus.tdd.point.dto;
 
-import io.hhplus.tdd.point.record.TransactionType;
+import io.hhplus.tdd.point.entity.TransactionType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

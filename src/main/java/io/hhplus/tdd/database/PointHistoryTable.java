@@ -1,8 +1,8 @@
 package io.hhplus.tdd.database;
 
 
-import io.hhplus.tdd.point.record.PointHistory;
-import io.hhplus.tdd.point.record.TransactionType;
+import io.hhplus.tdd.point.entity.PointHistory;
+import io.hhplus.tdd.point.entity.TransactionType;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

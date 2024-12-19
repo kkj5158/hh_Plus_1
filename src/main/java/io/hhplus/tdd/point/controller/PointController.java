@@ -1,12 +1,10 @@
-package io.hhplus.tdd.point;
+package io.hhplus.tdd.point.controller;
 
+import io.hhplus.tdd.point.service.PointService;
 import io.hhplus.tdd.point.dto.UserPointHistoryResponseDto;
 import io.hhplus.tdd.point.dto.UserPointRequestDto;
 import io.hhplus.tdd.point.dto.UserPointResponseDto;
-import io.hhplus.tdd.point.record.PointHistory;
-import io.hhplus.tdd.point.record.UserPoint;
 import lombok.RequiredArgsConstructor;
-import org.apache.catalina.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

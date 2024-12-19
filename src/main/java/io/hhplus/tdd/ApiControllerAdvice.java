@@ -2,13 +2,11 @@ package io.hhplus.tdd;
 
 import io.hhplus.tdd.exception.DefaultErrorResponse;
 import io.hhplus.tdd.exception.DefaultException;
-import io.hhplus.tdd.point.PointController;
+import io.hhplus.tdd.point.controller.PointController;
 import java.time.LocalDateTime;
-import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
@@ -17,7 +15,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 class ApiControllerAdvice extends ResponseEntityExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(PointController.class);
-
 
     @ExceptionHandler(value = DefaultException.class)
     public ResponseEntity<DefaultErrorResponse> handleException(DefaultException e) {
